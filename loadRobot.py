@@ -22,6 +22,7 @@ def loadRobot(loadID, x, y):
         
         elif roboDistance < 10 and robot['batteryLevel'] > maxbattery:
             result = robot
+            maxbattery = robot['batterLevel']
     
     roboInfo = {
         "robotID": result['robotId'],
