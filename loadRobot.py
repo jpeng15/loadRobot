@@ -20,7 +20,7 @@ def loadRobot(loadID, x, y):
             mindist = roboDistance
             result = robot
         
-        elif roboDistance < 10 and robot['batteryLevel'] > maxbattery:
+        elif mindist <= 10 and roboDistance <= 10 and robot['batteryLevel'] > maxbattery:
             result = robot
             maxbattery = robot['batterLevel']
     
